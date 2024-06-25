@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+p, h1{
+    color:var(--transparent-white);
+    padding-left: 10%;
+}
+
+h1{
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 10%;
+}
+
+p{
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    margin-bottom: 80px;
+    padding-right: 15px;
+}
+
+main{
+    width: 375px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+}
+img{
+    padding: 10% 0 10% 10%;
+
+}
+
+
+.sedans{
+    background: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.suvs{
+    background: var(--dark-cyan);
+
+}
+
+.luxury{
+    background: var(--very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn1{ color: var(--bright-orange);}
+.btn2{ color: var(--dark-cyan);}
+.btn3{color: var(--very-dark-cyan);}
+
+button{
+    border: none;
+    background: var(--transparent-white);
+    margin-left:10px;
+    padding:15px 25px;
+    margin-bottom: 35px;
+    margin-left: 35px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+
+}
+
+
+/*           RESPONSIVE             */
+
+
+@media screen and (min-width :1080px) { 
+    
+    .block{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    main{
+        width: 720px;
+    }
+
+    .sedans{
+        background: var(--bright-orange);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    
+    }
+
+    .luxury{
+
+        background: var(--very-dark-cyan);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    button{
+    
+        /* width: 30%;
+        height: 40px; */
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    p{
+        padding-right: 38px;
+    }
+}
